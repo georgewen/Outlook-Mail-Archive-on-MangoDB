@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+      <bindings>
+        <basicHttpBinding>
+          <binding name="FileTransferServicesBinding_IMsgVaultService"
+            maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+            <security mode="TransportCredentialOnly" />
+          </binding>
+        </basicHttpBinding>
+      </bindings>
+      <client>
+        <endpoint address="http://localhost/MsgVaultWeb/MsgVaultService.svc/mex"
+          binding="basicHttpBinding" bindingConfiguration="FileTransferServicesBinding_IMsgVaultService"
+          contract="MsgVaultSvc.IMsgVaultService" name="FileTransferServicesBinding_IMsgVaultService" />
+      </client>
+    </system.serviceModel>
+</configuration>

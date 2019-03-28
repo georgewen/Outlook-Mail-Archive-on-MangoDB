@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QISMsgVaultWeb.Web" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QISMsgVaultWeb.Web" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/MsgVaultWeb/MsgVaultService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/MongoDB.Bson" />
+  <xs:complexType name="ArrayOfMongoMail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MongoMail" nillable="true" type="tns:MongoMail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMongoMail" nillable="true" type="tns:ArrayOfMongoMail" />
+  <xs:complexType name="MongoMail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Body" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Categories" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreationTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EntryID" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MongoDB.Bson" minOccurs="0" name="Id" type="q1:ObjectId" />
+      <xs:element minOccurs="0" name="ReceivedTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SenderEmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="To" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MongoMail" nillable="true" type="tns:MongoMail" />
+  <xs:complexType name="VaultUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreationTime" type="xs:dateTime" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MongoDB.Bson" minOccurs="0" name="Id" type="q2:ObjectId" />
+      <xs:element minOccurs="0" name="LastUpdated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="emailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="initialized" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VaultUser" nillable="true" type="tns:VaultUser" />
+</xs:schema>

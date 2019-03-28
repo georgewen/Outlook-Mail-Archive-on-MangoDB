@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3c1ca8d7-4b3b-41c4-8cf8-c896bd618aad" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/msgvaultweb/MsgVaultService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MsgVaultService4.xsd" MetadataType="Schema" ID="2bc768eb-dba9-4fed-a9ba-9a76b0da0ce7" SourceId="1" SourceUrl="http://localhost/MsgVaultWeb/MsgVaultService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MsgVaultService41.xsd" MetadataType="Schema" ID="16496566-06fe-4f55-944c-862d7813fcad" SourceId="1" SourceUrl="http://localhost/MsgVaultWeb/MsgVaultService.svc?xsd=xsd3" />
+    <MetadataFile FileName="MsgVaultService42.xsd" MetadataType="Schema" ID="6afe9184-340f-41d4-8e61-d7082367b1dd" SourceId="1" SourceUrl="http://localhost/MsgVaultWeb/MsgVaultService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MsgVaultService43.xsd" MetadataType="Schema" ID="ddc54df6-36b5-4d6f-9544-79b151951c23" SourceId="1" SourceUrl="http://localhost/MsgVaultWeb/MsgVaultService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MsgVaultService1.disco" MetadataType="Disco" ID="2da346cb-dc9d-49b8-b480-f62286f5f0db" SourceId="1" SourceUrl="http://localhost/MsgVaultWeb/MsgVaultService.svc?disco" />
+    <MetadataFile FileName="MsgVaultService1.wsdl" MetadataType="Wsdl" ID="95444f9b-f9e2-4396-80a0-7ebe5d76d0ae" SourceId="1" SourceUrl="http://localhost/MsgVaultWeb/MsgVaultService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

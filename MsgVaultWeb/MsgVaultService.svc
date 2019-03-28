@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="QISMsgVaultWeb.Web.MsgVaultService" CodeBehind="MsgVaultService.svc.cs" %>

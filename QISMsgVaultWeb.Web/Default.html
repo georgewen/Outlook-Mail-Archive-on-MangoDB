@@ -1,0 +1,15 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>test</title>
+        <script type="text/javascript">
+            function setHeight() {
+                parent.document.getElementById('msgvault').style.height = document['body'].offsetHeight + 'px';
+                parent.document.getElementById('msgvault').style.width = document['body'].offsetWidth + 'px';
+            }
+        </script>
+	</head>
+	<body onload="setHeight()">
+	    <iframe id="msgvault" frameborder=0 src="http://localhost:6503/QISMsgVaultWebTestPage.aspx"></iframe>
+	</body>
+</html>

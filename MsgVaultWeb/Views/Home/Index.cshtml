@@ -1,0 +1,30 @@
+﻿
+@model List<MongoMail>
+
+@{
+    ViewBag.Title = "Index";
+    var grid = new WebGrid(source: @Model,defaultSort:"ReceivedTime");
+    grid.SortDirection = SortDirection.Ascending;
+}
+
+<h2>Index</h2>
+        <style type="text/css"> 
+            .grid { margin: 4px; border-collapse: collapse; width: 100%; } 
+            .head { background-color: #E8E8E8; font-weight: bold; color: #FFF; } 
+            .grid th, .grid td { border: 1px solid #C0C0C0; padding: 5px; } 
+            .alt { background-color: #E8E8E8; color: #000; } 
+            .subject { width: 40%; font-weight:bold;} 
+        </style> 
+<div id="grid"> 
+            @grid.GetHtml( 
+                tableStyle: "grid", 
+                headerStyle: "head", 
+                alternatingRowStyle: "alt", 
+                columns: grid.Columns( 
+                    grid.Column("SenderEmailAddress", "SenderEmailAddress"), 
+                    grid.Column("Subject", "Subject",style: "subject"), 
+                    grid.Column("ReceivedTime", "ReceivedTime") ,
+                    grid.Column("Categories", "Categories") 
+                ) 
+            ) 
+        </div> 
