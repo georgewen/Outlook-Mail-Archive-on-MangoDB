@@ -25,6 +25,7 @@
     <SccProvider>SAK</SccProvider>
     <SilverlightApplicationList>{9512852A-BB67-4CF7-8C5D-45F6FA1CD6E2}|..\QISMsgVaultWeb\QISMsgVaultWeb.csproj|ClientBin|False</SilverlightApplicationList>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -78,6 +79,7 @@
     <Content Include="Default.html" />
     <Content Include="QISMsgVaultWebTestPage.aspx" />
     <Content Include="QISMsgVaultWebTestPage.html" />
+    <Content Include="Readme.txt" />
     <Content Include="Silverlight.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
